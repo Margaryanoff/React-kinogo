@@ -1,0 +1,42 @@
+.animes_parent{
+    background: rgb(120, 112, 112);
+    padding: 10px 20px;
+    overflow: hidden;
+}
+
+.animes_title{
+    color: ghostwhite;
+    padding: 30px 40px;
+}
+
+.animes_main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    >div{
+        width: calc(50% - 15px);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        color: ghostwhite;
+        transition: .3s;
+        border: 2px solid transparent;
+        border-radius: 30px;
+        padding: 10px;
+        img{
+            width: 60%;
+            aspect-ratio: 2/3;
+        }
+        &:hover{
+            scale: 1.06;
+            transition: .3s;
+            cursor: pointer;
+            border: 2px solid ghostwhite;
+        }
+    }
+}

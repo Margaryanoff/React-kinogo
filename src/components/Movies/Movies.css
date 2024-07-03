@@ -1,0 +1,95 @@
+.film_cards_main {
+    h2 {
+        color: ghostwhite;
+    }
+    > div {
+        box-shadow: 0 0 10px transparent;
+        transition: 0.3s;
+        &:hover {
+            box-shadow: 0 0 10px gray;
+            transition: 0.3s;
+            cursor: pointer;
+            scale: 1.01;
+        }
+    }
+    .movie_card {
+        border: 1px solid rgb(87, 84, 84);
+        display: flex;
+        flex-direction: column;
+        .movie_card_top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 20px;
+            > p {
+                color: rgb(79, 75, 75);
+                background: lightgray;
+                padding: 5px 20px;
+                border-radius: 5px;
+                transition: .3s;
+            }
+        }
+        .movie_card_root {
+            padding: 10px 15px;
+            color: lightgray;
+            display: flex;
+            gap: 30px;
+            .movie_card_image {
+                width: 100%;
+            }
+            .image_card_info {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .card_info_root_rating {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                }
+                .date_country_etc {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                }
+            }
+        }
+    }
+    .movie_card_bottom {
+        padding: 0 40px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 30px 0;
+        color: ghostwhite;
+        a {
+            display: inline-block;
+            padding: 5px 30px;
+            background: gray;
+            color: rgb(65, 59, 59);
+            transition: 0.3s;
+            border-radius: 8px;
+            box-shadow: 0 0 10px transparent;
+            &:hover {
+                background: ghostwhite;
+                color: rgb(72, 66, 66);
+                transition: 0.3s;
+                scale: 1.1;
+                box-shadow: 0 0 10px white;
+            }
+        }
+        > div {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .comments_views {
+            flex-grow: 1;
+            padding: 0 20px;
+            > div {
+                display: flex;
+                gap: 10px;
+                margin: 0 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+nav{
+    background: black;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+    .nav_main{
+        .nav_logo{
+            flex-grow: 1;
+            h1{
+                font-weight: 400;
+                letter-spacing: 2px;
+            }
+        }
+        display: flex;
+        color: white;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 20px;
+        ul{
+            display: flex;
+            text-align: right;
+            a{
+                color: white;
+                display: inline-block;
+                margin: 0 5px;
+                transition: .3s;
+                &:hover{
+                    scale: 1.1;
+                    transition: .3s;
+                }
+            }
+        }
+        form{
+            display: flex;
+            align-items: center;
+            input{
+                border: none;
+                padding: 5px 10px;
+                background: gray;
+            }
+            .button_nav{
+                background: rgb(89, 88, 88);
+            }
+        }
+    }
+}

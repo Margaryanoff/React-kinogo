@@ -1,0 +1,38 @@
+.coming_soon_main{
+    padding: 20px ;
+    background: rgb(120, 112, 112);
+    > h2{
+        color: ghostwhite;
+        margin-bottom: 20px;
+    }
+    .coming_soon_cards_parent{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        >div{
+            display: flex;
+            border-radius: 20px;
+            overflow: hidden;
+            gap: 20px;
+            box-shadow: 0 0 5px transparent;
+            transition: .3s;
+            .image_card{
+                width: 100%;
+                img{
+                    width: 100%;
+                    display: block;
+                }
+            }
+            h2{
+                color: ghostwhite;
+                margin-bottom: 8px;
+            }
+            &:hover{
+                box-shadow: 0 0 5px ghostwhite;
+                transition: .3s;
+                scale: 1.03;
+                cursor: pointer;
+            }
+        }
+    }
+}
